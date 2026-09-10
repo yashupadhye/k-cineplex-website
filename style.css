@@ -193,28 +193,6 @@ img {
 }
 
 
-/* BOOK BUTTON */
-
-.nav-book-btn {
-    padding: 11px 18px;
-
-    border-radius: 5px;
-
-    background: var(--gold);
-    color: #111;
-
-    font-size: 11px;
-    font-weight: 800;
-
-    transition: var(--transition);
-}
-
-.nav-book-btn:hover {
-    background: var(--gold-light);
-    transform: translateY(-2px);
-}
-
-
 /* MOBILE MENU */
 
 .menu-toggle {
@@ -776,13 +754,6 @@ img {
 .movie-show-link:hover i {
     transform: translateX(5px);
 }
-
-.center-button {
-    margin-top: 45px;
-
-    text-align: center;
-}
-
 
 /* =========================================================
    SHOWTIMES
@@ -1511,7 +1482,7 @@ img {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
 
@@ -1886,11 +1857,6 @@ img {
 
     .nav-link::after {
         display: none;
-    }
-
-    .nav-book-btn {
-        text-align: center;
-        margin-top: 8px;
     }
 
     .hero {
