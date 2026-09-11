@@ -617,61 +617,10 @@ img {
     overflow: hidden;
 }
 
-.poster-placeholder {
+.movie-poster img {
+    width: 100%;
     height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    gap: 14px;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(217,164,65,0.25),
-            transparent 45%
-        ),
-        linear-gradient(145deg,#20190c,#070707);
-
-    color: var(--gold);
-
-    font-size: 50px;
-}
-
-.poster-placeholder span {
-    font-size: 10px;
-    letter-spacing: 3px;
-    font-weight: 800;
-}
-
-.poster-two {
-    background:
-        radial-gradient(
-            circle,
-            rgba(198,40,40,0.3),
-            transparent 45%
-        ),
-        linear-gradient(145deg,#210909,#080808);
-}
-
-.poster-two i {
-    color: #e85b5b;
-}
-
-.poster-three {
-    background:
-        radial-gradient(
-            circle,
-            rgba(90,70,150,0.3),
-            transparent 45%
-        ),
-        linear-gradient(145deg,#100b20,#070707);
-}
-
-.poster-three i {
-    color: #b69cff;
+    object-fit: cover;
 }
 
 .movie-overlay {
@@ -731,192 +680,6 @@ img {
     color: #777;
 
     font-size: 10px;
-}
-
-.movie-show-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-
-    margin-top: 18px;
-
-    color: var(--gold);
-
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.movie-show-link i {
-    transition: var(--transition);
-}
-
-.movie-show-link:hover i {
-    transform: translateX(5px);
-}
-
-/* =========================================================
-   SHOWTIMES
-========================================================= */
-
-.showtimes-section {
-    background: #080808;
-}
-
-.screen-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-
-    margin-bottom: 35px;
-}
-
-.screen-tab {
-    padding: 11px 22px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 4px;
-
-    background: transparent;
-    color: #aaa;
-
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    cursor: pointer;
-
-    transition: var(--transition);
-}
-
-.screen-tab:hover,
-.screen-tab.active {
-    background: var(--gold);
-    color: #111;
-    border-color: var(--gold);
-}
-
-.showtime-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-
-.showtime-card {
-    padding: 28px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #171717,
-            #101010
-        );
-
-    border: 1px solid var(--border);
-
-    border-radius: 8px;
-
-    transition: var(--transition);
-}
-
-.showtime-card:hover {
-    border-color: rgba(217,164,65,0.35);
-}
-
-.showtime-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-bottom: 20px;
-}
-
-.screen-number {
-    color: var(--gold);
-
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.format {
-    padding: 5px 9px;
-
-    border-radius: 3px;
-
-    background: rgba(255,255,255,0.05);
-
-    color: #aaa;
-
-    font-size: 9px;
-}
-
-.showtime-card h3 {
-    font-family: "Playfair Display", serif;
-
-    font-size: 26px;
-}
-
-.showtime-card p {
-    margin: 7px 0 20px;
-
-    color: #777;
-
-    font-size: 12px;
-}
-
-.showtimes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.showtimes span {
-    padding: 9px 13px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 4px;
-
-    color: #999;
-
-    font-size: 10px;
-}
-
-.booking-notice {
-    margin-top: 30px;
-    padding: 20px 22px;
-
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    background: rgba(217,164,65,0.06);
-
-    border: 1px solid rgba(217,164,65,0.15);
-
-    border-radius: 6px;
-}
-
-.booking-notice > i {
-    color: var(--gold);
-}
-
-.booking-notice p {
-    flex: 1;
-
-    color: #999;
-
-    font-size: 11px;
-}
-
-.booking-notice a {
-    color: var(--gold);
-
-    font-size: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
 }
 
 
@@ -1089,7 +852,7 @@ img {
 
 
 /* =========================================================
-   GALLERY
+   GALLERY (Updated for All Photos)
 ========================================================= */
 
 .gallery-section {
@@ -1098,89 +861,33 @@ img {
 
 .gallery-grid {
     display: grid;
-
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-auto-rows: 230px;
-
-    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
 }
 
 .gallery-item {
     overflow: hidden;
-
-    border-radius: 6px;
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid var(--border);
+    background: var(--dark-card);
 }
 
-.gallery-large {
-    grid-row: span 2;
-}
-
-.gallery-placeholder {
+.gallery-item img {
     width: 100%;
     height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(217,164,65,0.2),
-            transparent 50%
-        ),
-        linear-gradient(145deg,#251c0a,#090909);
-
-    color: var(--gold);
-
-    font-size: 32px;
-
+    object-fit: cover;
     transition: transform 0.6s ease;
 }
 
-.gallery-placeholder span {
-    font-size: 9px;
-    letter-spacing: 3px;
-    font-weight: 800;
+.gallery-large {
+    grid-column: span 2;
+    grid-row: span 2;
 }
 
-.gallery-item:hover .gallery-placeholder {
+.gallery-item:hover img {
     transform: scale(1.06);
-}
-
-.gallery-dark {
-    background:
-        radial-gradient(circle,#242424,transparent 50%),
-        #0b0b0b;
-
-    color: #ddd;
-}
-
-.gallery-red {
-    background:
-        radial-gradient(circle,rgba(198,40,40,0.3),transparent 50%),
-        #100606;
-
-    color: #e05b5b;
-}
-
-.gallery-gold {
-    background:
-        radial-gradient(circle,rgba(217,164,65,0.3),transparent 50%),
-        #151005;
-
-    color: var(--gold);
-}
-
-.gallery-purple {
-    background:
-        radial-gradient(circle,rgba(110,80,180,0.3),transparent 50%),
-        #0e0917;
-
-    color: #b8a4ed;
 }
 
 
@@ -1721,6 +1428,35 @@ img {
 
 
 /* =========================================================
+   FLOATING WHATSAPP BUTTON
+========================================================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 75px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 998;
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a;
+    color: #ffffff;
+}
+
+
+/* =========================================================
    BACK TO TOP
 ========================================================= */
 
@@ -1786,6 +1522,15 @@ img {
 
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-large {
+        grid-column: span 2;
+        grid-row: span 1;
     }
 
     .about-grid {
@@ -1901,7 +1646,6 @@ img {
 
     .movie-grid,
     .coming-grid,
-    .showtime-grid,
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1914,36 +1658,14 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .screen-tabs {
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding-bottom: 5px;
-    }
-
-    .screen-tab {
-        white-space: nowrap;
-    }
-
-    .booking-notice {
-        flex-wrap: wrap;
-    }
-
-    .booking-notice p {
-        flex-basis: calc(100% - 40px);
-    }
-
-    .booking-notice a {
-        margin-left: 40px;
-    }
-
     .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 180px;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
     }
 
     .gallery-large {
+        grid-column: span 1;
         grid-row: span 1;
-        grid-column: span 2;
     }
 
     .about-grid {
@@ -2019,14 +1741,6 @@ img {
 
     .hero {
         min-height: 800px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-large {
-        grid-column: span 1;
     }
 
     .footer-grid {

@@ -125,59 +125,6 @@ updateActiveNav();
 
 
 /* =========================================================
-   SCREEN FILTER
-========================================================= */
-
-const screenTabs = document.querySelectorAll(".screen-tab");
-const showtimeCards = document.querySelectorAll(".showtime-card");
-
-screenTabs.forEach(tab => {
-
-    tab.addEventListener("click", () => {
-
-        screenTabs.forEach(item => {
-            item.classList.remove("active");
-        });
-
-        tab.classList.add("active");
-
-        const selectedScreen = tab.dataset.screen;
-
-        showtimeCards.forEach(card => {
-
-            const cardScreen = card.dataset.screen;
-
-            if (
-                selectedScreen === "all" ||
-                selectedScreen === cardScreen
-            ) {
-
-                card.style.display = "block";
-
-                setTimeout(() => {
-                    card.style.opacity = "1";
-                    card.style.transform = "translateY(0)";
-                }, 10);
-
-            } else {
-
-                card.style.opacity = "0";
-                card.style.transform = "translateY(10px)";
-
-                setTimeout(() => {
-                    card.style.display = "none";
-                }, 250);
-
-            }
-
-        });
-
-    });
-
-});
-
-
-/* =========================================================
    BACK TO TOP
 ========================================================= */
 
@@ -269,7 +216,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const revealElements = document.querySelectorAll(
     ".movie-card, .feature-card, .coming-card, " +
-    ".showtime-card, .contact-card, .gallery-item"
+    ".contact-card, .gallery-item"
 );
 
 const revealObserver = new IntersectionObserver(
