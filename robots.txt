@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://k-cineplex-website.vercel.app/sitemap.xml
