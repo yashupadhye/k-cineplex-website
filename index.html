@@ -1,654 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="K Cineplex Kopargaon - A Luxurious 2 Screen Multiplex at K City Centre, Gurudwara Road, Kopargaon.">
-
-    <meta name="keywords"
-          content="K Cineplex, Kopargaon Cinema, Kopargaon Movies, K Cineplex Kopargaon, Movie Theatre Kopargaon">
-
-    <title>K Cineplex | A Luxurious 2 Screen Multiplex | Kopargaon</title>
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>K Cineplex Kopargaon | Luxury 2 Screen Multiplex at K City Centre</title>
+<meta name="description" content="K Cineplex is a luxurious 2-screen multiplex at K City Centre, Gurudwara Road, Kopargaon. See what's now showing, coming soon, and how to reach us.">
+<meta name="theme-color" content="#0e0c0a">
+<link rel="canonical" href="https://k-cineplex-website.vercel.app/">
+<meta property="og:type" content="website"><meta property="og:title" content="K Cineplex Kopargaon"><meta property="og:description" content="A luxurious 2-screen multiplex at K City Centre, Kopargaon."><meta property="og:image" content="https://k-cineplex-website.vercel.app/img/auditorium.webp">
+<link rel="preload" as="image" href="img/auditorium.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MovieTheater","name":"K Cineplex","telephone":"+919011961195","numberOfScreens":2,"url":"https://k-cineplex-website.vercel.app/","image":"https://k-cineplex-website.vercel.app/img/auditorium.webp","address":{"@type":"PostalAddress","streetAddress":"K City Centre, 1st Floor, Gurudwara Road","addressLocality":"Kopargaon","addressRegion":"Maharashtra","postalCode":"423601","addressCountry":"IN"}}</script>
 </head>
-
 <body>
+<svg width="0" height="0" hidden>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.4.55 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.2.2 2.3.55 3.4a1 1 0 01-.25 1z"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.2.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></symbol>
+</svg>
 
-<!-- =========================
-     NAVBAR
-========================= -->
-
-<header class="navbar" id="navbar">
-    <div class="container nav-container">
-        <a href="#home" class="logo">
-            <span class="logo-k">K</span>
-            <span class="logo-text">
-                <strong>CINEPLEX</strong>
-                <small>KOPARGAON</small>
-            </span>
-        </a>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-
-        <nav class="nav-menu" id="navMenu">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#movies" class="nav-link">Movies</a>
-            <a href="#coming-soon" class="nav-link">Coming Soon</a>
-            <a href="#gallery" class="nav-link">Gallery</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-    </div>
+<header class="top" id="top">
+  <a class="brand" href="#top" aria-label="K Cineplex home"><b>K</b> Cineplex</a>
+  <nav class="links" aria-label="Main"><a href="#now">Now Showing</a><a href="#soon">Coming Soon</a><a href="#experience">Experience</a><a href="#faq">FAQ</a><a href="#visit">Visit</a></nav>
+  <details class="menu"><summary>Menu</summary><div><a href="#now">Now Showing</a><a href="#soon">Coming Soon</a><a href="#experience">Experience</a><a href="#faq">FAQ</a><a href="#visit">Visit</a></div></details>
+  <a class="btn btn-sm" href="https://wa.me/919011961195?text=Hi,%20I%20want%20today's%20showtimes" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Showtimes</a>
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero" id="home">
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content container">
-        <div class="hero-badge">
-            <i class="fa-solid fa-film"></i>
-            K CITY CENTRE • KOPARGAON
-        </div>
-
-        <h1>
-            Experience Movies
-            <span>Like Never Before</span>
-        </h1>
-
-        <p>
-            Welcome to K Cineplex — a luxurious 2-screen multiplex
-            bringing entertainment, comfort and cinematic experiences
-            to Kopargaon.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#movies" class="btn btn-primary">
-                <i class="fa-solid fa-film"></i>
-                Explore Movies
-            </a>
-
-            <a href="https://wa.me/919011961195" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-whatsapp"></i>
-                WhatsApp Us
-            </a>
-        </div>
-
-        <div class="hero-info">
-            <div>
-                <i class="fa-solid fa-tv"></i>
-                <span>2 Screens</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Kopargaon</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-phone"></i>
-                <span>+91 90119 61195</span>
-            </div>
-        </div>
+<main>
+<section class="hero">
+  <img src="img/auditorium.webp" width="680" height="510" alt="" fetchpriority="high">
+  <div class="hero-in">
+    <p class="eyebrow">K City Centre · Gurudwara Road · Kopargaon</p>
+    <h1>The big screen,<br><em>done properly.</em></h1>
+    <p class="lead">Kopargaon's luxurious 2-screen multiplex. Plush seating, immersive sound, and the latest releases every week.</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/919011961195?text=Hi,%20I%20want%20today's%20showtimes" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Get today's showtimes</a>
+      <a class="btn ghost" href="#now">Browse movies</a>
     </div>
-
-    <div class="scroll-down">
-        <span>Scroll to explore</span>
-        <i class="fa-solid fa-chevron-down"></i>
-    </div>
+  </div>
 </section>
 
-
-<!-- =========================
-     QUICK INFO
-========================= -->
-
-<section class="quick-info">
-    <div class="container quick-grid">
-        <div class="quick-card">
-            <div class="quick-icon">
-                <i class="fa-solid fa-film"></i>
-            </div>
-            <div>
-                <h3>2 Screens</h3>
-                <p>Enjoy movies across two screens.</p>
-            </div>
-        </div>
-
-        <div class="quick-card">
-            <div class="quick-icon">
-                <i class="fa-solid fa-couch"></i>
-            </div>
-            <div>
-                <h3>Comfortable Seating</h3>
-                <p>Relax and enjoy the show in comfort.</p>
-            </div>
-        </div>
-
-        <div class="quick-card">
-            <div class="quick-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div>
-                <h3>Prime Location</h3>
-                <p>K City Centre, Gurudwara Road.</p>
-            </div>
-        </div>
-
-        <div class="quick-card">
-            <div class="quick-icon">
-                <i class="fa-solid fa-clock"></i>
-            </div>
-            <div>
-                <h3>Entertainment</h3>
-                <p>Your destination for movies.</p>
-            </div>
-        </div>
-    </div>
+<section class="stats" aria-label="Highlights">
+  <div><b>2</b><span>Luxury screens</span></div>
+  <div><b>1st Floor</b><span>K City Centre</span></div>
+  <div><b>Cine Café</b><span>Snacks &amp; drinks</span></div>
+  <div><b>Weekly</b><span>New releases</span></div>
 </section>
 
-
-<!-- =========================
-     MOVIES
-========================= -->
-
-<section class="section movies-section" id="movies">
-    <div class="container">
-        <div class="section-heading">
-            <span class="section-label">NOW SHOWING</span>
-            <h2>Movies at <span>K Cineplex</span></h2>
-            <p>Check out the latest movies playing now.</p>
-        </div>
-
-        <div class="movie-grid">
-            <!-- Movie Card 1 -->
-            <article class="movie-card">
-                <div class="movie-poster">
-                    <img src="hiwan.jpg" alt="HIWAAN Poster" loading="lazy">
-                    <div class="movie-overlay">
-                        <a href="https://wa.me/919011961195?text=Hi,%20I%20want%20to%20know%20more%20about%20HIWAAN"
-                           class="small-book-btn" target="_blank" rel="noopener noreferrer">
-                            Inquire on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="movie-info">
-                    <h3>HIWAAN</h3>
-                    <div class="movie-meta">
-                        <span>2D</span>
-                        <span>•</span>
-                        <span>Multiple Languages</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Movie Card 2 -->
-            <article class="movie-card">
-                <div class="movie-poster">
-                    <img src="mijapur.webp" alt="MIJAPUR Poster" loading="lazy">
-                    <div class="movie-overlay">
-                        <a href="https://wa.me/919011961195?text=Hi,%20I%20want%20to%20know%20more%20about%20MIJAPUR"
-                           class="small-book-btn" target="_blank" rel="noopener noreferrer">
-                            Inquire on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="movie-info">
-                    <h3>MIJAPUR</h3>
-                    <div class="movie-meta">
-                        <span>2D / 3D</span>
-                        <span>•</span>
-                        <span>Subject to availability</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Movie Card 3 -->
-            <article class="movie-card">
-                <div class="movie-poster">
-                    <img src="hanumanansh.jpg" alt="HANUMAN ANSH Poster" loading="lazy">
-                    <div class="movie-overlay">
-                        <a href="https://wa.me/919011961195?text=Hi,%20I%20want%20to%20know%20more%20about%20HANUMAN%20ANSH"
-                           class="small-book-btn" target="_blank" rel="noopener noreferrer">
-                            Inquire on WhatsApp
-                        </a>
-                    </div>
-                </div>
-                <div class="movie-info">
-                    <h3>HANUMAN ANSH</h3>
-                    <div class="movie-meta">
-                        <span>2D / 3D</span>
-                        <span>•</span>
-                        <span>Subject to availability</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
+<section class="dark" id="now">
+  <div class="wrap"><p class="eyebrow">Now showing</p><h2>In cinemas today</h2><p class="sub">Tap a poster to ask for timings and seats on WhatsApp.</p></div>
+  <ul class="rail" id="nowList" role="list"></ul>
 </section>
 
-
-<!-- =========================
-     COMING SOON
-========================= -->
-
-<section class="section coming-section" id="coming-soon">
-    <div class="container">
-        <div class="section-heading">
-            <span class="section-label">COMING SOON</span>
-            <h2>Coming <span>Soon</span></h2>
-            <p>Watch this space for upcoming blockbuster releases at K Cineplex.</p>
-        </div>
-
-        <div class="coming-grid">
-            <!-- Upcoming Movie 1 -->
-            <div class="coming-card">
-                <div class="coming-poster">
-                    <img src="vvaan.jpg" alt="Vvan: Force of the Forrest Poster" loading="lazy">
-                    <span class="coming-badge">COMING SOON</span>
-                </div>
-                <div class="coming-content">
-                    <span class="coming-tag">SUPERNATURAL / THRILLER</span>
-                    <h3>Vvan: Force of the Forrest</h3>
-                    <p>Starring Sidharth Malhotra &amp; Tamannaah Bhatia. A battle between deep folklore and modern reality.</p>
-                </div>
-            </div>
-
-            <!-- Upcoming Movie 2 -->
-            <div class="coming-card">
-                <div class="coming-poster">
-                    <img src="Drishyam3.jfif" alt="Drishyam 3 Announcement Poster" loading="lazy">
-                    <span class="coming-badge">2ND OCT 2026</span>
-                </div>
-                <div class="coming-content">
-                    <span class="coming-tag">CRIME / MYSTERY</span>
-                    <h3>Drishyam 3</h3>
-                    <p>Starring Ajay Devgn. Vijay Salgaonkar returns to protect his family in the ultimate face-off.</p>
-                </div>
-            </div>
-
-            <!-- Upcoming Movie 3 -->
-            <div class="coming-card">
-                <div class="coming-poster">
-                    <img src="ramayana.jfif" alt="Ramayana: Part 1 Poster" loading="lazy">
-                    <span class="coming-badge">DIWALI RELEASE</span>
-                </div>
-                <div class="coming-content">
-                    <span class="coming-tag">MYTHOLOGICAL EPIC</span>
-                    <h3>Ramayana: Part 1</h3>
-                    <p>Directed by Nitesh Tiwari, starring Ranbir Kapoor, Sai Pallavi, Sunny Deol, and Yash.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="wrap" id="soon">
+  <p class="eyebrow">Coming soon</p><h2>Mark your calendar</h2>
+  <ul class="soon" id="soonList" role="list"></ul>
 </section>
 
-
-<!-- =========================
-     WHY K CINEPLEX
-========================= -->
-
-<section class="section features-section">
-    <div class="container">
-        <div class="section-heading">
-            <span class="section-label">WHY K CINEPLEX</span>
-            <h2>Your Local <span>Movie Destination</span></h2>
-        </div>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-tv"></i>
-                </div>
-                <h3>Two Screens</h3>
-                <p>Multiple screens give moviegoers more choice throughout the day.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <h3>Convenient Location</h3>
-                <p>Located at K City Centre on Gurudwara Road in Kopargaon.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-volume-high"></i>
-                </div>
-                <h3>Great Experience</h3>
-                <p>Enjoy immersive sound and picture quality on the big screen.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fa-solid fa-film"></i>
-                </div>
-                <h3>Entertainment</h3>
-                <p>Enjoy the latest movie releases with friends and family.</p>
-            </div>
-        </div>
-    </div>
+<section class="wrap" id="experience">
+  <p class="eyebrow">The experience</p><h2>Built for a better night out</h2>
+  <div class="feat">
+    <article><h3>Two screens</h3><p>More films and more showtimes, so you can pick what suits you.</p></article>
+    <article><h3>Comfort seating</h3><p>Deep, cushioned seats with room to relax for the whole film.</p></article>
+    <article><h3>Immersive sound</h3><p>Big-screen picture and sound, the way films are meant to be seen.</p></article>
+    <article><h3>Cine Café &amp; lounge</h3><p>Grab a snack and unwind in the lounge before or after the show.</p></article>
+  </div>
+  <div class="shots" id="shots">
+    <button class="tall"><img src="img/entrance.webp" width="339" height="510" loading="lazy" alt="K Cineplex entrance sign"></button>
+    <button><img src="img/screen.webp" width="680" height="510" loading="lazy" alt="Screen with seating"></button>
+    <button><img src="img/lobby.webp" width="680" height="510" loading="lazy" alt="Lobby"></button>
+    <button><img src="img/cafe.webp" width="680" height="453" loading="lazy" alt="Cine Café"></button>
+    <button><img src="img/lounge.webp" width="680" height="453" loading="lazy" alt="Lounge"></button>
+    <button><img src="img/floor.webp" width="680" height="453" loading="lazy" alt="Lobby with mural walls"></button>
+  </div>
 </section>
 
-
-<!-- =========================
-     GALLERY
-========================= -->
-
-<section class="section gallery-section" id="gallery">
-    <div class="container">
-        <div class="section-heading">
-            <span class="section-label">GALLERY</span>
-            <h2>Experience <span>K Cineplex</span></h2>
-            <p>Explore our luxurious multiplex spaces, screens, and cafe.</p>
-        </div>
-
-        <div class="gallery-grid">
-            <div class="gallery-item gallery-large">
-                <img src="unnamed.webp" alt="K Cineplex Screen" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="unnamed (1).webp" alt="Theatre Seating" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="unnamed (2).webp" alt="Lobby Area" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="unnamed (3).webp" alt="K Cineplex Entrance" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="unnamed (4).webp" alt="Cine Cafe" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="unnamed (5).webp" alt="Lounge Area" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="unnamed (6).webp" alt="Corridor and Marvel Murals" loading="lazy">
-            </div>
-        </div>
-    </div>
+<section class="wrap narrow" id="faq">
+  <p class="eyebrow">FAQ</p><h2>Good to know</h2>
+  <details><summary>Where is K Cineplex?</summary><p>On the 1st floor of K City Centre, Gurudwara Road, Kopargaon, Maharashtra 423601.</p></details>
+  <details><summary>How do I check showtimes and seats?</summary><p>Message us on WhatsApp at +91 90119 61195 or call us. We will confirm today's shows and availability.</p></details>
+  <details><summary>How many screens do you have?</summary><p>K Cineplex is a 2-screen multiplex, with new releases added every week.</p></details>
 </section>
 
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<section class="section about-section" id="about">
-    <div class="container about-grid">
-        <div class="about-visual">
-            <div class="about-main-card">
-                <img src="unnamed (3).webp" alt="K Cineplex Interior" class="about-img" loading="lazy">
-            </div>
-
-            <div class="about-floating">
-                <strong>2</strong>
-                <span>SCREENS</span>
-            </div>
-        </div>
-
-        <div class="about-content">
-            <span class="section-label">ABOUT K CINEPLEX</span>
-            <h2>Movies. Memories. <span>Moments.</span></h2>
-            <p>K Cineplex is a two-screen multiplex located at K City Centre on Gurudwara Road, Kopargaon.</p>
-            <p>The cinema provides a convenient destination for movie lovers looking to enjoy the latest releases on the big screen.</p>
-
-            <div class="about-list">
-                <div>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Two-screen multiplex</span>
-                </div>
-                <div>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Located in K City Centre</span>
-                </div>
-                <div>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Comfortable seating & great sound</span>
-                </div>
-                <div>
-                    <i class="fa-solid fa-check"></i>
-                    <span>Kopargaon's movie destination</span>
-                </div>
-            </div>
-        </div>
+<section class="dark visit" id="visit">
+  <div class="wrap grid2">
+    <div>
+      <p class="eyebrow">Visit us</p><h2>Find K Cineplex</h2>
+      <address>K City Centre, 1st Floor,<br>Gurudwara Road,<br>Kopargaon, Maharashtra 423601</address>
+      <p class="cta"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=K+Cineplex+Kopargaon" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Get directions</a><a class="btn ghost light" href="tel:+919011961195"><svg><use href="#i-phone"/></svg>+91 90119 61195</a></p>
     </div>
+    <div class="map"><button type="button" id="loadMap"><svg><use href="#i-pin"/></svg>Tap to load map</button></div>
+  </div>
 </section>
+</main>
 
-
-<!-- =========================
-     LOCATION
-========================= -->
-
-<section class="location-section">
-    <div class="container location-grid">
-        <div class="location-content">
-            <span class="section-label">FIND US</span>
-            <h2>Visit <span>K Cineplex</span></h2>
-            <p class="location-description">
-                Located on the first floor of K City Centre,
-                Gurudwara Road, Kopargaon.
-            </p>
-
-            <div class="address-box">
-                <div class="address-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                    <h3>Address</h3>
-                    <p>
-                        K City Centre, 1st Floor,<br>
-                        Gurudwara Road,<br>
-                        Kopargaon, Maharashtra 423601
-                    </p>
-                </div>
-            </div>
-
-            <div class="address-box">
-                <div class="address-icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                    <h3>Phone</h3>
-                    <a href="tel:+919011961195">+91 90119 61195</a>
-                </div>
-            </div>
-
-            <div class="address-box">
-                <div class="address-icon">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div>
-                    <h3>WhatsApp</h3>
-                    <a href="https://wa.me/919011961195" target="_blank" rel="noopener noreferrer">Chat with Us on WhatsApp</a>
-                </div>
-            </div>
-
-            <a class="btn btn-primary"
-               href="https://www.google.com/maps/search/?api=1&query=K+Cineplex+Kopargaon"
-               target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-diamond-turn-right"></i>
-                Get Directions
-            </a>
-        </div>
-
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps?q=K%20Cineplex%20Kopargaon&output=embed"
-                title="Google Maps Location for K Cineplex Kopargaon"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-            <div class="map-overlay-card">
-                <i class="fa-solid fa-location-dot"></i>
-                <div>
-                    <strong>K Cineplex</strong>
-                    <span>Kopargaon, Maharashtra</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section class="section contact-section" id="contact">
-    <div class="container">
-        <div class="section-heading">
-            <span class="section-label">CONTACT</span>
-            <h2>Get in <span>Touch</span></h2>
-            <p>Have a question? Contact K Cineplex directly.</p>
-        </div>
-
-        <div class="contact-grid">
-            <a href="tel:+919011961195" class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div>
-                    <span>Call Us</span>
-                    <strong>+91 90119 61195</strong>
-                </div>
-                <i class="fa-solid fa-arrow-right arrow"></i>
-            </a>
-
-            <a href="https://wa.me/919011961195" target="_blank" rel="noopener noreferrer" class="contact-card">
-                <div class="contact-icon">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div>
-                    <span>WhatsApp</span>
-                    <strong>Chat with Us</strong>
-                </div>
-                <i class="fa-solid fa-arrow-right arrow"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="cta-section">
-    <div class="cta-overlay"></div>
-    <div class="container cta-content">
-        <span class="section-label">READY FOR THE MOVIE?</span>
-        <h2>Make Your Next Movie <span>Experience Special</span></h2>
-        <p>Connect with us on WhatsApp or visit us today.</p>
-
-        <a href="https://wa.me/919011961195"
-           class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-whatsapp"></i>
-            Chat on WhatsApp
-        </a>
-    </div>
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer class="footer">
-    <div class="container footer-grid">
-        <div class="footer-brand">
-            <a href="#home" class="logo">
-                <span class="logo-k">K</span>
-                <span class="logo-text">
-                    <strong>CINEPLEX</strong>
-                    <small>KOPARGAON</small>
-                </span>
-            </a>
-            <p>
-                K Cineplex – A Luxurious 2 Screen Multiplex.
-                Your destination for movies and entertainment
-                in Kopargaon.
-            </p>
-        </div>
-
-        <div class="footer-column">
-            <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#movies">Movies</a>
-            <a href="#coming-soon">Coming Soon</a>
-            <a href="#gallery">Gallery</a>
-        </div>
-
-        <div class="footer-column">
-            <h3>Information</h3>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
-            <a href="#home">Facilities</a>
-        </div>
-
-        <div class="footer-column">
-            <h3>Contact</h3>
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                K City Centre, 1st Floor,<br>
-                Gurudwara Road,<br>
-                Kopargaon
-            </p>
-            <a href="tel:+919011961195">
-                <i class="fa-solid fa-phone"></i>
-                +91 90119 61195
-            </a>
-            <a href="https://wa.me/919011961195" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-whatsapp"></i>
-                WhatsApp Chat
-            </a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <div class="container">
-            <p>
-                © <span id="currentYear"></span>
-                K Cineplex Kopargaon. All Rights Reserved.
-            </p>
-            <p>Designed for K Cineplex</p>
-        </div>
-    </div>
-</footer>
-
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/919011961195" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<!-- Back to Top -->
-<button id="backToTop" class="back-to-top" aria-label="Back to Top">
-    <i class="fa-solid fa-arrow-up"></i>
-</button>
-
-<!-- JavaScript -->
-<script src="script.js"></script>
-
+<footer class="foot"><span>© <span id="yr">2026</span> K Cineplex Kopargaon. All rights reserved.</span><a href="https://wa.me/919011961195" target="_blank" rel="noopener">WhatsApp</a></footer>
+<nav class="dock" aria-label="Quick actions"><a href="tel:+919011961195"><svg><use href="#i-phone"/></svg>Call</a><a href="https://wa.me/919011961195" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a><a href="https://www.google.com/maps/search/?api=1&query=K+Cineplex+Kopargaon" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Directions</a></nav>
+<dialog id="lb"><button aria-label="Close">×</button><img alt=""></dialog>
+<script src="script.js" defer></script>
 </body>
 </html>
